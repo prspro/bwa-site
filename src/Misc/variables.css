@@ -1,0 +1,38 @@
+:root {
+  /*text colors*/
+  --section-text-color-default: #969696;
+  --section-text-color-alt-light: #fff;
+  --section-text-color-alt-light2: #818181;
+  --section-text-color-alt-dark: #222;
+
+  /*font sizes*/
+  --section-text-fz-sml: 16px;
+  --section-text-fz-default: 18px;
+  --section-text-fz-lrg: 20px;
+  --section-text-fz-x-lrg: 28px;
+  --section-text-fz-xx-lrg: 36px;
+  --section-text-fz-xxx-lrg: 48px;
+  --section-text-fz-xxxx-lrg: 64px;
+
+  /*button colors*/
+  --button-bg-color-default: #2e4dec;
+
+  /*border colors*/
+  --bd-color-default: #e5e5e5;
+
+  /*background colors*/
+  --section-bg-color-default: #fff;
+  --section-bg-color-dark: #000;
+  --section-bg-color-light: #f7f8fa;
+
+  /*padding n margins*/
+  --section-pdng-sml: 10px;
+  --section-pdng-mdl: 20px;
+  --section-pdng-lrg: 30px;
+  --section-pdng-x-lrg: 64px;
+  --section-pdng-xxx-lrg: 164px;
+
+  --section-mrgn-sml: 10px;
+  --section-mrgn-mdl: 20px;
+  --section-mrgn-lrg: 30px;
+}

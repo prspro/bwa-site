@@ -1,38 +1,41 @@
-.App {
-  text-align: center;
+@import "../src/Misc/reset.css";
+@import "../src/Misc/container.css";
+@import "../src/Misc/fonts.css";
+@import "../src/Misc/variables.css";
+
+body {
+  font-family: "Poppins", "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+    sans-serif;
+  color: var(--section-bg-color-default);
+  font-size: var(--section-text-fz-default);
+  background-color: var(--section-bg-color-default);
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.pt-sml {
+  padding-top: var(--section-pdng-sml);
+}
+.pt-mdl {
+  padding-top: var(--section-pdng-mdl);
+}
+.pt-lrg {
+  padding-top: var(--section-pdng-lrg);
+}
+.pt-x-lrg {
+  padding-top: var(--section-pdng-x-lrg);
+}
+.pt-xxx-lrg {
+  padding-top: var(--section-pdng-xxx-lrg);
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.pb-sml {
+  padding-top: var(--section-mrgn-sml);
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.pb-mdl {
+  padding-top: var(--section-mrgn-mdl);
 }
-
-.App-link {
-  color: #61dafb;
+.pb-lrg {
+  padding-top: var(--section-mrgn-lrg);
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.pb-xxx-lrg {
+  padding-bottom: var(--section-pdng-xxx-lrg);
 }

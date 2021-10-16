@@ -1,0 +1,15 @@
+.navigation {
+  display: flex;
+  justify-content: space-between;
+  margin: -5px;
+}
+.navigation__item {
+  margin: 5px;
+}
+.navigation__link {
+  text-decoration: none;
+}
+.navigation__text {
+  color: var(--section-text-color-alt-light);
+  text-transform: uppercase;
+}
