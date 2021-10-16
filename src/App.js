@@ -6,6 +6,10 @@ function App() {
   return (
     <div className="App">
       <Header />
+      <main>
+        <section></section>
+      </main>
+      <footer></footer>
     </div>
   );
 }
