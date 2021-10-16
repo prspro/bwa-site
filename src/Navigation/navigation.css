@@ -2,6 +2,7 @@
   display: flex;
   justify-content: space-between;
   margin: -5px;
+  flex-wrap: wrap;
 }
 .navigation__item {
   margin: 5px;
@@ -11,5 +12,10 @@
 }
 .navigation__text {
   color: var(--section-text-color-alt-light);
+  font-weight: 500;
   text-transform: uppercase;
+  transition: all 0.3s;
+}
+.navigation__text:hover {
+  color: #1abc9c;
 }
