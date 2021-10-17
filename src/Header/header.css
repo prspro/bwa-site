@@ -5,8 +5,10 @@
 .header__bar {
   display: flex;
   align-items: center;
-  margin-bottom: 60px;
-  padding: 0 154px;
+  /* margin-bottom: 60px; */
+  margin: 0 auto 60px;
+  /* padding: 0 154px; */
+  max-width: 1140px;
 }
 .header__navigation {
   /* margin: 0 auto; */
@@ -44,7 +46,8 @@
   border: none;
   background-image: url("../img/svg/search.svg");
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: contain;
   height: 25px;
   width: 25px;
+  min-width: 25px;
 }
