@@ -4,12 +4,16 @@ import "./navigation.css";
 export default function Navigation() {
   return (
     <ul className="navigation navigation--header">
-      <li className="navigation__item">
-        <a href="#" className="navigation__link">
-          <span className="navigation__text">home</span>
-        </a>
-      </li>
-      <li className="navigation__item">
+      {["home", "gallery", "products", "review", "support"].map((item) => (
+        <li className="navigation__item">
+          <a href="#" className="navigation__link">
+            <span className="navigation__text">{item}</span>
+            <span></span>
+          </a>
+        </li>
+      ))}
+
+      {/* <li className="navigation__item">
         <a href="#" className="navigation__link">
           <span className="navigation__text">gallery</span>
         </a>
@@ -28,7 +32,7 @@ export default function Navigation() {
         <a href="#" className="navigation__link">
           <span className="navigation__text">support</span>
         </a>
-      </li>
+      </li> */}
     </ul>
   );
 }

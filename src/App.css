@@ -1,7 +1,7 @@
-@import "../src/Misc/reset.css";
-@import "../src/Misc/container.css";
-@import "../src/Misc/fonts.css";
-@import "../src/Misc/variables.css";
+@import "./styles/reset.css";
+@import "./styles/container.css";
+@import "./styles/fonts.css";
+@import "./styles/variables.css";
 
 body {
   font-family: "Poppins", "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
