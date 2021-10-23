@@ -1,0 +1,24 @@
+.opinions {
+  padding: 50px 0;
+}
+.opinions__wrap {
+  max-width: 1140px;
+  margin: 0 auto;
+}
+.opinions__title {
+  font-weight: 600;
+  font-size: var(--section-text-fz-xxxx-lrg);
+  line-height: 1.62;
+  color: var(--section-text-color-alt-dark);
+  margin-bottom: 80px;
+  max-width: 535px;
+}
+.opinions__list {
+  display: flex;
+  flex-wrap: wrap;
+  margin: -25px;
+}
+.opinions__item {
+  margin: 25px;
+  width: calc((100% / 3) - 50px);
+}

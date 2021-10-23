@@ -1,0 +1,18 @@
+.products {
+  padding: 50px 0;
+}
+.products__text-wrap {
+  max-width: 480px;
+  margin: 0 auto 50px;
+  text-align: center;
+  font-size: var(--section-text-fz-sml);
+  line-height: 2;
+  color: var(--section-text-color-alt-light2);
+}
+.products__title {
+  margin-bottom: 16px;
+  font-weight: 600;
+  font-size: var(--section-text-fz-xx-lrg);
+  line-height: 54px;
+  color: var(--section-text-color-alt-dark);
+}
