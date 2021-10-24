@@ -40,6 +40,11 @@
   margin-right: -15px;
   margin-left: -15px;
 }
+@media screen and (max-width: 991px) {
+  .row {
+    margin: 0;
+  }
+}
 
 .container-fluid::after,
 .container-fluid::before,

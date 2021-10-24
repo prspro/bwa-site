@@ -37,3 +37,9 @@
 .advantage-banner__text-box--light h3 {
   color: var(--section-text-color-alt-light);
 }
+@media screen and (max-width: 1399px) {
+  .advantage-banner {
+    padding: 72px 24px;
+    min-height: 500px;
+  }
+}

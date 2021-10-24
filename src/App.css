@@ -3,6 +3,10 @@
 @import "./styles/fonts.css";
 @import "./styles/variables.css";
 
+.App {
+  overflow: hidden;
+}
+
 body {
   font-family: "Poppins", "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
     sans-serif;
@@ -10,6 +14,7 @@ body {
   font-size: var(--section-text-fz-default);
   font-weight: 300;
   background-color: var(--section-bg-color-default);
+  overflow-x: hidden;
 }
 
 .logo {
@@ -33,18 +38,33 @@ body {
 .pt-x-lrg {
   padding-top: var(--section-pdng-x-lrg);
 }
+.pt-xx-lrg {
+  padding-top: var(--section-pdng-xx-lrg);
+}
+.pt-sxx-lrg {
+  padding-top: var(--section-pdng-sxx-lrg);
+}
 .pt-xxx-lrg {
   padding-top: var(--section-pdng-xxx-lrg);
 }
 
 .pb-sml {
-  padding-top: var(--section-mrgn-sml);
+  padding-bottom: var(--section-pdng-sml);
 }
 .pb-mdl {
-  padding-top: var(--section-mrgn-mdl);
+  padding-bottom: var(--section-pdng-mdl);
 }
 .pb-lrg {
-  padding-top: var(--section-mrgn-lrg);
+  padding-bottom: var(--section-pdng-lrg);
+}
+.pb-x-lrg {
+  padding-bottom: var(--section-pdng-x-lrg);
+}
+.pb-xx-lrg {
+  padding-bottom: var(--section-pdng-xx-lrg);
+}
+.pb-sxx-lrg {
+  padding-bottom: var(--section-pdng-sxx-lrg);
 }
 .pb-xxx-lrg {
   padding-bottom: var(--section-pdng-xxx-lrg);

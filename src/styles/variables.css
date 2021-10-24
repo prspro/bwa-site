@@ -30,10 +30,49 @@
   --section-pdng-sml: 10px;
   --section-pdng-mdl: 20px;
   --section-pdng-lrg: 30px;
-  --section-pdng-x-lrg: 64px;
+  --section-pdng-x-lrg: 50px;
+  --section-pdng-xx-lrg: 80px;
+  --section-pdng-sxx-lrg: 100px;
   --section-pdng-xxx-lrg: 110px;
 
   --section-mrgn-sml: 10px;
   --section-mrgn-mdl: 20px;
   --section-mrgn-lrg: 30px;
+}
+
+@media screen and (max-width: 991px) {
+  :root {
+    /*font sizes*/
+    --section-text-fz-sml: 16px;
+    --section-text-fz-default: 18px;
+    --section-text-fz-lrg: 20px;
+    --section-text-fz-sx-lrg: 24px;
+    --section-text-fz-x-lrg: 28px;
+    --section-text-fz-xx-lrg: 36px;
+    --section-text-fz-xxx-lrg: 42px;
+    --section-text-fz-xxxx-lrg: 54px;
+
+    /*padding n margins*/
+    --section-pdng-sml: 5px;
+    --section-pdng-mdl: 15px;
+    --section-pdng-lrg: 20px;
+    --section-pdng-x-lrg: 25px;
+    --section-pdng-xx-lrg: 40px;
+    --section-pdng-sxx-lrg: 50px;
+    --section-pdng-xxx-lrg: 50px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  :root {
+    /*font sizes*/
+    --section-text-fz-sml: 16px;
+    --section-text-fz-default: 18px;
+    --section-text-fz-lrg: 20px;
+    --section-text-fz-sx-lrg: 24px;
+    --section-text-fz-x-lrg: 28px;
+    --section-text-fz-xx-lrg: 36px;
+    --section-text-fz-xxx-lrg: 36px;
+    --section-text-fz-xxxx-lrg: 36px;
+  }
 }

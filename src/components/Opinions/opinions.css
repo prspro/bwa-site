@@ -1,5 +1,5 @@
 .opinions {
-  padding: 50px 0;
+  /* padding: 50px 0; */
 }
 .opinions__wrap {
   max-width: 1140px;
@@ -21,4 +21,16 @@
 .opinions__item {
   margin: 25px;
   width: calc((100% / 3) - 50px);
+}
+@media screen and (max-width: 991px) {
+  .opinions__title {
+    margin-bottom: 30px;
+  }
+  .opinions__list {
+    margin: -15px;
+  }
+  .opinions__item {
+    margin: 15px;
+    width: calc((100% / 3) - 30px);
+  }
 }

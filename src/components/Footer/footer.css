@@ -1,5 +1,5 @@
 .footer {
-  padding: 100px 0;
+  /* padding: 100px 0; */
   background-color: var(--section-bg-color-dark);
   color: var(--section-bg-color-default);
 }
@@ -28,4 +28,20 @@
   font-weight: 600;
   font-size: 26px;
   line-height: 39px;
+}
+@media screen and (max-width: 1199px) {
+  .footer__col {
+    margin: 25px;
+  }
+  .footer__col-list {
+    margin: -25px;
+  }
+}
+@media screen and (max-width: 991px) {
+  .footer__col {
+    margin: 15px;
+  }
+  .footer__col-list {
+    margin: -15px;
+  }
 }

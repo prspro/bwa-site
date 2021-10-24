@@ -11,6 +11,9 @@
 .service-category__item {
   margin-bottom: 15px;
 }
+.service-category__item:last-of-type {
+  margin-bottom: 0;
+}
 .service-category__link {
   text-decoration: none;
   color: var(--section-text-color-alt-light);

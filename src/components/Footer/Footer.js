@@ -2,80 +2,12 @@ import React from "react";
 import "./footer.css";
 import Image from "../_misc/Image/Image";
 import ServiceCategory from "../_misc/ServiceCategory/ServiceCategory";
+import { footerInfo } from "../../data/initialData";
+import { servicesData } from "../../data/initialData";
 
 export default function Footer() {
-  const footerInfo = {
-    logoText: "autodrone",
-    logoDescription: "Look up the sky and beautiful world easily.",
-  };
-
-  const servicesData = [
-    {
-      categoryTitle: "Explore",
-      linksList: [
-        {
-          anchor: "Our Services",
-          href: ".",
-        },
-        {
-          anchor: "Specification",
-          href: ".",
-        },
-        {
-          anchor: "Refund",
-          href: ".",
-        },
-        {
-          anchor: "Playlist",
-          href: ".",
-        },
-      ],
-    },
-    {
-      categoryTitle: "Account",
-      linksList: [
-        {
-          anchor: "My Account",
-          href: ".",
-        },
-        {
-          anchor: "Top Benefit",
-          href: ".",
-        },
-        {
-          anchor: "How-to Tutorials",
-          href: ".",
-        },
-        {
-          anchor: "Moment",
-          href: ".",
-        },
-      ],
-    },
-    {
-      categoryTitle: "Office",
-      linksList: [
-        {
-          anchor: "+021 2208 1996",
-          href: "+021 2208 1996",
-        },
-        {
-          anchor: "SCBD, Jakarta",
-          href: "",
-        },
-        {
-          anchor: "No.2 (Autodrone)",
-          href: "",
-        },
-        {
-          anchor: "support@autodrone.id",
-          href: "support@autodrone.id",
-        },
-      ],
-    },
-  ];
   return (
-    <footer className="footer">
+    <footer className="footer pb-sxx-lrg pt-sxx-lrg">
       <div className="container">
         <div className="row">
           <div className="footer__wrap">

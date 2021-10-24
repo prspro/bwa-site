@@ -1,25 +1,11 @@
 import React from "react";
 import "./quickinfo.css";
 import Image from "../_misc/Image/Image";
+import { quickInfo } from "../../data/initialData";
 
 export default function QuickInfo() {
-  const quickInfo = {
-    title: "Why Drone Light?",
-    description: (
-      <p>
-        We provide a best self drone easy to use and operate. With auto pilot,
-        the device will take a beautiful view for the best of flying operation.
-      </p>
-    ),
-    list: [
-      { value: "4K", shortDescription: "Camera Resolution" },
-      { value: "2 TB", shortDescription: "Storage Capacity" },
-      { value: "60 m/s", shortDescription: "Super Max Speed" },
-      { value: "30 mins", shortDescription: "Long Flight Time" },
-    ],
-  };
   return (
-    <section className="quick-info">
+    <section className="quick-info pt-xx-lrg pb-xx-lrg">
       <div className="container">
         <div className="row">
           <div className="quick-info__wrap">

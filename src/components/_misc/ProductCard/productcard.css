@@ -31,3 +31,8 @@
 .product-card__btn {
   margin-top: auto;
 }
+@media screen and (max-width: 991px) {
+  .product-card {
+    padding: 20px;
+  }
+}
