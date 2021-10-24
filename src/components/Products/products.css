@@ -1,5 +1,13 @@
 .products {
   padding: 50px 0;
+  overflow-x: hidden;
+}
+.products__wrap {
+  max-width: 1050px;
+  margin: 0 auto;
+}
+.products__wrap .splide__track {
+  overflow: visible;
 }
 .products__text-wrap {
   max-width: 480px;

@@ -73,10 +73,10 @@ export default function Products() {
                 fixedWidth: "500px",
                 gap: "50px",
                 //
-                trimSpace: false,
-                focus: "center",
-                // perPage: 3,
-                // perMove: 2,
+                // trimSpace: false,
+                // focus: "center",
+                perPage: 2,
+                perMove: 2,
                 // flickMaxPages: 1,
               }}
             >
