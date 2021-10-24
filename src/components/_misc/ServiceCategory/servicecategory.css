@@ -1,0 +1,17 @@
+.service-category {
+  line-height: 27px;
+  color: var(--section-text-color-alt-light);
+}
+.service-category__title {
+  font-weight: 600;
+  margin-bottom: 30px;
+}
+.service-category__list {
+}
+.service-category__item {
+  margin-bottom: 15px;
+}
+.service-category__link {
+  text-decoration: none;
+  color: var(--section-text-color-alt-light);
+}

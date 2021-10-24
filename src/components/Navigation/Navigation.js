@@ -2,13 +2,34 @@ import React from "react";
 import "./navigation.css";
 
 export default function Navigation() {
+  const navigationList = [
+    {
+      anchor: "home",
+      link: ".",
+    },
+    {
+      anchor: "gallery",
+      link: ".",
+    },
+    {
+      anchor: "products",
+      link: ".",
+    },
+    {
+      anchor: "review",
+      link: ".",
+    },
+    {
+      anchor: "support",
+      link: ".",
+    },
+  ];
   return (
     <ul className="navigation navigation--header">
-      {["home", "gallery", "products", "review", "support"].map((item) => (
+      {navigationList.map((item) => (
         <li className="navigation__item">
-          <a href="#" className="navigation__link">
-            <span className="navigation__text">{item}</span>
-            <span></span>
+          <a href={item.link} className="navigation__link">
+            <span className="navigation__text">{item.anchor}</span>
           </a>
         </li>
       ))}

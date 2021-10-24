@@ -4,6 +4,7 @@ import Advantages from "./components/Advantages/Advantages";
 import QuickInfo from "./components/QuickInfo/QuickInfo";
 import Products from "./components/Products/Products";
 import Opinions from "./components/Opinions/Opinions";
+import Footer from "./components/Footer/Footer";
 
 function App() {
   return (
@@ -15,7 +16,7 @@ function App() {
         <Products />
         <Opinions />
       </main>
-      <footer></footer>
+      <Footer />
     </div>
   );
 }
