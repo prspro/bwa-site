@@ -25,6 +25,27 @@ body {
   width: 75px;
   height: 35px;
 }
+@media screen and (max-width: 767px) {
+  .logo img {
+    min-width: 56px;
+    width: 56px;
+    height: auto;
+  }
+}
+
+.burger {
+  width: 18px;
+  margin-left: auto;
+}
+.burger__bar {
+  border-radius: 3px;
+  height: 2px;
+  background-color: #fff;
+  margin-bottom: 4px;
+}
+.burger__bar:last-of-type {
+  margin-bottom: 0;
+}
 
 .pt-sml {
   padding-top: var(--section-pdng-sml);
@@ -68,4 +89,12 @@ body {
 }
 .pb-xxx-lrg {
   padding-bottom: var(--section-pdng-xxx-lrg);
+}
+@media screen and (max-width: 767px) {
+  .pb-xx-lrg {
+    padding-bottom: 28px;
+  }
+  .pt-xx-lrg {
+    padding-top: 28px;
+  }
 }

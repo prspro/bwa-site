@@ -40,8 +40,26 @@
 @media screen and (max-width: 991px) {
   .footer__col {
     margin: 15px;
+    /* max-width: calc(50% - 30px); */
+    /* min-width: calc(25% - 30px); */
+  }
+  .footer__col--logo {
+    width: 100%;
+    max-width: 100%;
   }
   .footer__col-list {
     margin: -15px;
+    flex-wrap: wrap;
+  }
+  .footer__col:not(.footer__col--logo) {
+    flex: 1;
+  }
+}
+@media screen and (max-width: 767px) {
+  .footer__col-list {
+    flex-direction: column;
+  }
+  .footer__col--logo {
+    width: auto;
   }
 }

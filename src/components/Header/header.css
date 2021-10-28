@@ -48,7 +48,36 @@
   width: 25px;
   min-width: 25px;
 }
-@media screen {
+@media screen and (max-width: 991px) {
+  .header__navigation {
+    margin: 0 35px;
+  }
+}
+@media screen and (max-width: 767px) {
   .header {
+  }
+  .header__bar {
+    margin: 0 auto 70px;
+    padding: 0 10px;
+  }
+  .header__text-wrap h1 {
+    margin-bottom: 27px;
+  }
+  .header__text-wrap > *:last-child {
+    margin-top: 27px;
+  }
+  .header__text-wrap {
+    margin-bottom: 40px;
+    padding: 0 10px;
+  }
+  .header__hero-picture {
+    max-width: 273px;
+  }
+  /* make aside menu u lazy ass!!!! */
+  .header__navigation {
+    display: none;
+  }
+  .header__search-btn {
+    display: none;
   }
 }

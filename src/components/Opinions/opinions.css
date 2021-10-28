@@ -27,10 +27,21 @@
     margin-bottom: 30px;
   }
   .opinions__list {
-    margin: -15px;
+    margin: -8px;
+    flex-direction: column;
   }
   .opinions__item {
-    margin: 15px;
-    width: calc((100% / 3) - 30px);
+    margin: 8px;
+    /* width: calc((100% / 3) - 16px); */
+    width: auto;
+  }
+}
+@media screen and (max-width: 767px) {
+  .opinions__wrap {
+    padding: 0 12px;
+  }
+  .opinions__title {
+    margin-bottom: 36px;
+    line-height: 62px;
   }
 }

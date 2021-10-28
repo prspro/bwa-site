@@ -32,6 +32,9 @@ export default function Products() {
                     fixedWidth: "450px",
                     gap: "20px",
                   },
+                  767: {
+                    destroy: true,
+                  },
                 },
                 // flickMaxPages: 1,
               }}

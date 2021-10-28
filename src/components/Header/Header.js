@@ -20,6 +20,11 @@ export default function Header() {
               <Navigation />
             </div>
             <button className="header__search-btn"></button>
+            <div className="header__burger burger">
+              <div className="burger__bar"></div>
+              <div className="burger__bar"></div>
+              <div className="burger__bar"></div>
+            </div>
           </div>
           <div className="header__text-wrap">
             <h1>{headerData.title}</h1>

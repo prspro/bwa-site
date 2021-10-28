@@ -10,3 +10,14 @@
   margin: 10px;
   width: calc(50% - 20px);
 }
+@media screen and (max-width: 767px) {
+  .advantages {
+    padding-bottom: 70px;
+  }
+  .advantages__list {
+    flex-direction: column;
+  }
+  .advantages__item {
+    width: auto;
+  }
+}

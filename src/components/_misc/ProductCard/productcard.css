@@ -36,3 +36,14 @@
     padding: 20px;
   }
 }
+@media screen and (max-width: 767px) {
+  .product-card {
+    padding: 0;
+    border: none;
+  }
+  .product-card__pic {
+    border-radius: 0;
+    width: 100%;
+    margin-bottom: 16px;
+  }
+}

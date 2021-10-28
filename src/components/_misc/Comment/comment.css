@@ -41,8 +41,19 @@
 .comment__author-role {
   line-height: 27px;
 }
-@media screen and (max-width: 991px) {
+@media screen and (max-width: 1199px) {
   .comment {
     padding: 15px;
+  }
+  .comment__text-wrap {
+    margin-bottom: 15px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .comment {
+    padding: 30px;
+  }
+  .comment__text-wrap {
+    margin-bottom: 30px;
   }
 }
