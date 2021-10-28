@@ -48,6 +48,10 @@
   width: 25px;
   min-width: 25px;
 }
+.header__burger {
+  margin-left: auto;
+  display: none;
+}
 @media screen and (max-width: 991px) {
   .header__navigation {
     margin: 0 35px;
@@ -79,5 +83,8 @@
   }
   .header__search-btn {
     display: none;
+  }
+  .header__burger {
+    display: block;
   }
 }

@@ -35,7 +35,7 @@ body {
 
 .burger {
   width: 18px;
-  margin-left: auto;
+  /* margin-left: auto; */
 }
 .burger__bar {
   border-radius: 3px;
