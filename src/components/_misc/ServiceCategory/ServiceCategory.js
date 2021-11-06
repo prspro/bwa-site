@@ -24,8 +24,6 @@ export default function ServiceCategory({ data }) {
     return entry;
   });
 
-  console.log(dataLinksPrepared);
-
   return (
     <div className="service-category">
       <p className="service-category__title">{data.categoryTitle}</p>

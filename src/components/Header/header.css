@@ -77,9 +77,22 @@
   .header__hero-picture {
     max-width: 273px;
   }
-  /* make aside menu u lazy ass!!!! */
   .header__navigation {
-    display: none;
+    display: block;
+    background-color: var(--section-bg-color-dark);
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: auto;
+    left: 100%;
+    max-width: 200px;
+    z-index: 10;
+    margin: 0;
+    padding: 15px;
+    transition: all 0.3s;
+  }
+  .header__navigation.shown {
+    transform: translate(-100%, 0);
   }
   .header__search-btn {
     display: none;

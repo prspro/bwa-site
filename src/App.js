@@ -5,6 +5,7 @@ import QuickInfo from "./components/QuickInfo/QuickInfo";
 import Products from "./components/Products/Products";
 import Opinions from "./components/Opinions/Opinions";
 import Footer from "./components/Footer/Footer";
+import Overlay from "./components/_misc/Overlay/Overlay";
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
         <Opinions />
       </main>
       <Footer />
+      <Overlay />
     </div>
   );
 }

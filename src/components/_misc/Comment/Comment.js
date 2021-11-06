@@ -4,7 +4,6 @@ import Image from "../Image/Image";
 
 export default function Comment({ props }) {
   const { shortDescription, authorName, authorRole, authorIconSrc } = props;
-  console.log(authorRole);
   return (
     <div className="comment">
       <div className="comment__text-wrap">{shortDescription}</div>

@@ -33,18 +33,13 @@ body {
   }
 }
 
-.burger {
-  width: 18px;
-  /* margin-left: auto; */
+.on-mob {
+  display: none;
 }
-.burger__bar {
-  border-radius: 3px;
-  height: 2px;
-  background-color: #fff;
-  margin-bottom: 4px;
-}
-.burger__bar:last-of-type {
-  margin-bottom: 0;
+@media screen and (max-width: 767px) {
+  .on-mob {
+    display: block;
+  }
 }
 
 .pt-sml {

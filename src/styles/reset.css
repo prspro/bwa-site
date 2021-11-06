@@ -6,8 +6,12 @@
 }
 
 /* Убираем внутренние отступы */
-ul[class],
+/* ul[class],
 ol[class] {
+  padding: 0;
+} */
+ul,
+ol {
   padding: 0;
 }
 

@@ -1,0 +1,16 @@
+.overlay {
+  /* display: none; */
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: transparent;
+  transition: all 0.3s;
+  z-index: -1;
+}
+.overlay.shown {
+  z-index: 9;
+  display: block;
+  background-color: #00000050;
+}
