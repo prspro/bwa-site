@@ -13,9 +13,13 @@ const mobileMenuSlice = createSlice({
     hideMobileMenu(state, action) {
       state.isShown = false;
     },
+    showMobileMenu(state, action) {
+      state.isShown = true;
+    },
   },
 });
 
-export const { toggleMobileMenu, hideMobileMenu } = mobileMenuSlice.actions;
+export const { showMobileMenu, toggleMobileMenu, hideMobileMenu } =
+  mobileMenuSlice.actions;
 
 export default mobileMenuSlice.reducer;
