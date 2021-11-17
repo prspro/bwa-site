@@ -2,6 +2,7 @@ import React from "react";
 import "./advantagebanner.css";
 import Image from "../Image/Image";
 import classNames from "classnames";
+import parse from "html-react-parser";
 
 export default function AdvantageBanner({
   imageSrc,
@@ -10,7 +11,6 @@ export default function AdvantageBanner({
   blockText,
   isLight,
 }) {
-  // const picture2path = "/img/content-pic2.png";
   return (
     <div className="advantage-banner">
       <Image
@@ -23,8 +23,8 @@ export default function AdvantageBanner({
           "advantage-banner__text-box--light": isLight,
         })}
       >
-        <h3>{blockTitle}</h3>
-        {blockText}
+        <h3>{parse(blockTitle)}</h3>
+        {parse(blockText)}
       </div>
     </div>
   );

@@ -53,7 +53,7 @@
   margin-bottom: 5px;
 }
 .quick-info__item-description {
-  max-width: 110px;
+  /* max-width: 110px; */
   display: inline-block;
 }
 @media screen and (max-width: 1399px) {

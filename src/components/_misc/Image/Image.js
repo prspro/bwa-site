@@ -1,25 +1,10 @@
 import React from "react";
-// import classNames from "classnames";
+import useImage from "./useImage";
 
 export default function Image({ src, alt, pictureClass }) {
-  // const pictureClassList = classNames(classList);
-  const pictureExt = src.split(".").at(-1);
-  const getPictureType = (ext) => {
-    switch (ext) {
-      case "jpg":
-        return "jpeg";
-      case "jpeg":
-        return "jpeg";
-      case "png":
-        return "png";
-      default:
-        return "png";
-    }
-  };
-  const srcType = getPictureType(pictureExt);
-  const srcWebp = src.replace("." + pictureExt, ".webp");
+  const { isSvg, srcType, srcWebp } = useImage(src);
 
-  if (pictureExt !== "svg") {
+  if (!isSvg) {
     return (
       <picture>
         <source srcSet={srcWebp} type="image/webp" />

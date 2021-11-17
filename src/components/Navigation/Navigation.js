@@ -1,11 +1,13 @@
 import React from "react";
 import "./navigation.css";
-import { navigationList } from "../../data/initialData";
+import useNavigationComponent from "./useNavigationComponent";
 
 export default function Navigation() {
+  const { navigationListTranslated } = useNavigationComponent();
+
   return (
     <ul className="navigation navigation--header">
-      {navigationList.map((item, idx) => (
+      {navigationListTranslated.map((item, idx) => (
         <li key={idx} className="navigation__item">
           <a href={item.link} className="navigation__link">
             <span className="navigation__text">{item.anchor}</span>

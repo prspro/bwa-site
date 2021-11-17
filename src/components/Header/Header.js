@@ -4,18 +4,19 @@ import Button from "../_misc/Button/Button";
 import Burger from "../_misc/Burger/Burger";
 import Image from "../_misc/Image/Image";
 import "./header.css";
-import { headerData } from "../../data/initialData";
-
-import { useSelector } from "react-redux";
-
 import classNames from "classnames";
+import useHeader from "./useHeader";
+import LanguageSwitcher from "../_misc/LanguageSwitcher/LanguageSwitcher";
+import parse from "html-react-parser";
 
 export default function Header() {
-  const heroImagePath = "/img/hero-picture.png";
-  const logoPath = "/img/svg/logo.svg";
-
-  const isMobileMenuShown = useSelector((state) => state.mobileMenu.isShown);
-
+  const {
+    headerTranslatedData,
+    heroImagePath,
+    heroImageAlt,
+    logoPath,
+    isMobileMenuShown,
+  } = useHeader();
   return (
     <header className="header pt-x-lrg pb-xxx-lrg">
       <div className="container">
@@ -32,19 +33,19 @@ export default function Header() {
               <Burger additionalClass={"on-mob"} />
               <Navigation />
             </div>
-            <button className="header__search-btn"></button>
+            <LanguageSwitcher />
             <Burger additionalClass={"header__burger"} />
           </div>
           <div className="header__text-wrap">
-            <h1>{headerData.title}</h1>
-            {headerData.shortDescription}
+            <h1>{parse(headerTranslatedData.translatablePart.title)}</h1>
+            {parse(headerTranslatedData.translatablePart.shortDescription)}
             <div className="header__slug-btn-wrap">
               <Button slug="." buttonClass="btn--blue" />
             </div>
           </div>
           <Image
             src={heroImagePath}
-            alt="ablalalabla"
+            alt={heroImageAlt}
             pictureClass="header__hero-picture"
           />
         </div>

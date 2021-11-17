@@ -2,10 +2,11 @@ import React from "react";
 import "./footer.css";
 import Image from "../_misc/Image/Image";
 import ServiceCategory from "../_misc/ServiceCategory/ServiceCategory";
-import { footerInfo } from "../../data/initialData";
-import { servicesData } from "../../data/initialData";
+import useFooter from "./useFooter";
 
 export default function Footer() {
+  const { footerDataTranslated } = useFooter();
+
   return (
     <footer className="footer pb-sxx-lrg pt-sxx-lrg">
       <div className="container">
@@ -16,18 +17,20 @@ export default function Footer() {
                 <div className="footer__logo-wrap">
                   <a className="logo footer__logo" href={"."}>
                     <Image
-                      src={"/img/svg/logo.svg"}
-                      alt={"logo"}
+                      src={footerDataTranslated.logoSrc}
+                      alt={footerDataTranslated.translatablePart.logoAlt}
                       pictureClass={""}
                     />
                   </a>
-                  <p className="footer__logo-text">{footerInfo.logoText}</p>
+                  <p className="footer__logo-text">
+                    {footerDataTranslated.translatablePart.logoText}
+                  </p>
                 </div>
                 <p className="footer__description">
-                  {footerInfo.logoDescription}
+                  {footerDataTranslated.translatablePart.logoDescription}
                 </p>
               </li>
-              {servicesData.map((entry, idx) => {
+              {footerDataTranslated.servicesList.map((entry, idx) => {
                 return (
                   <li key={idx} className="footer__col footer__col--services">
                     <ServiceCategory data={entry} />

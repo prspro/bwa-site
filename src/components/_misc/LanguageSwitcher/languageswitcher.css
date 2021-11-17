@@ -1,0 +1,29 @@
+.language-switcher {
+  position: relative;
+}
+.language-switcher__list {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 100%;
+  display: none;
+}
+.language-switcher__list.shown {
+  display: block;
+}
+.language-switcher__item {
+}
+.language-switcher__btn {
+  color: var(--section-text-color-alt-light);
+  background: transparent;
+  outline: none;
+  cursor: pointer;
+  border: none;
+  height: 40px;
+  width: 40px;
+  transition: all 0.3s;
+}
+.language-switcher__btn:hover {
+  background: var(--section-bg-color-default);
+  color: var(--section-text-color-alt-dark);
+}

@@ -14,4 +14,5 @@
 }
 .burger.on-mob {
   float: right;
+  margin-top: 5px;
 }

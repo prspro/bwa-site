@@ -1,18 +1,10 @@
 import React from "react";
 import "./burger.css";
-import { toggleMobileMenu } from "../../../dataStore/mobileMenuSlice";
-import { toggleOverlay } from "../../../dataStore/overlaySlice";
-import { useDispatch } from "react-redux";
-
 import classNames from "classnames";
+import useBurger from "./useBurger";
 
 export default function Burger({ additionalClass }) {
-  const dispatch = useDispatch();
-
-  const handleBurgerClick = () => {
-    dispatch(toggleMobileMenu(""));
-    dispatch(toggleOverlay(""));
-  };
+  const { handleBurgerClick } = useBurger();
 
   return (
     <div

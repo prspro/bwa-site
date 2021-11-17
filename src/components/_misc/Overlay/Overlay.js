@@ -1,22 +1,10 @@
 import React from "react";
 import "./overlay.css";
-
-import { useSelector, useDispatch } from "react-redux";
-
-import { hideOverlay } from "../../../dataStore/overlaySlice";
-import { hideMobileMenu } from "../../../dataStore/mobileMenuSlice";
-
+import useOverlay from "./useOverlay";
 import classNames from "classnames";
 
 export default function Overlay() {
-  const dispatch = useDispatch();
-
-  const handleOverlayClick = () => {
-    dispatch(hideOverlay(""));
-    dispatch(hideMobileMenu(""));
-  };
-
-  const isOverlayShown = useSelector((state) => state.overlay.isShown);
+  const { handleOverlayClick, isOverlayShown } = useOverlay();
 
   return (
     <div
