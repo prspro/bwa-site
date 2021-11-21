@@ -7,6 +7,7 @@ export default function useOverlay() {
   const handleOverlayClick = () => {
     dispatch(hideOverlay(""));
     dispatch(hideMobileMenu(""));
+    document.getElementsByTagName("BODY")[0].classList.toggle("scrollable");
   };
 
   const isOverlayShown = useSelector(

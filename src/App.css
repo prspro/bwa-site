@@ -17,6 +17,10 @@ body {
   overflow-x: hidden;
 }
 
+body.scrollable {
+  overflow: hidden;
+}
+
 .logo {
   display: inline-block;
 }
@@ -39,6 +43,15 @@ body {
 @media screen and (max-width: 767px) {
   .on-mob {
     display: block;
+  }
+}
+
+.on-dt {
+  display: block;
+}
+@media screen and (max-width: 767px) {
+  .on-dt {
+    display: none;
   }
 }
 

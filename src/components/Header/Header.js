@@ -32,8 +32,9 @@ export default function Header() {
             >
               <Burger additionalClass={"on-mob"} />
               <Navigation />
+              <LanguageSwitcher additionalClass={"on-mob"} />
             </div>
-            <LanguageSwitcher />
+            <LanguageSwitcher additionalClass={"on-dt"} />
             <Burger additionalClass={"header__burger"} />
           </div>
           <div className="header__text-wrap">

@@ -7,31 +7,25 @@ import Opinions from "./components/Opinions/Opinions";
 import Footer from "./components/Footer/Footer";
 import Overlay from "./components/_misc/Overlay/Overlay";
 
-// import { useResizeDetector } from "react-resize-detector";
-
-// import { hideMobileMenu } from "./dataStore/mobileMenuSlice";
-// import { useDispatch } from "react-redux";
-
-// import { useCallback } from "react";
+import { useEffect } from "react";
+import { hideMobileMenu, hideOverlay } from "./redux/appSlice";
+import { useDispatch } from "react-redux";
 
 function App() {
-  // const dispatch = useDispatch();
+  const dispatch = useDispatch();
 
-  // const hideMenu = () => {
-  //   dispatch(hideMobileMenu(""));
-  // };
+  const resizeHandler = function (ev) {
+    document.getElementsByTagName("BODY")[0].classList.remove("scrollable");
+    dispatch(hideMobileMenu(""));
+    dispatch(hideOverlay(""));
+  };
 
-  // const onResize = useCallback(() => {
-  //   console.log("123123");
-  //   hideMenu();
-  // }, []);
-
-  // const { width, height, ref } = useResizeDetector({
-  //   handleHeight: false,
-  //   refreshMode: "debounce",
-  //   refreshRate: 100,
-  //   onResize,
-  // });
+  useEffect(() => {
+    window.addEventListener("resize", resizeHandler, false);
+    return () => {
+      window.removeEventListener("resize", resizeHandler, false);
+    };
+  }, []);
 
   return (
     <div /*ref={ref}*/ className="App">

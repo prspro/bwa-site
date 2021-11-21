@@ -38,8 +38,6 @@ export default function useLanguageSwitcher() {
     });
   };
 
-  console.log(listShown);
-
   return {
     handleLangSwitcherClick,
     handleListToggler,

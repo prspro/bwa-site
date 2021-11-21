@@ -11,7 +11,7 @@
   line-height: 1.62;
   color: var(--section-text-color-alt-dark);
   margin-bottom: 80px;
-  max-width: 535px;
+  max-width: 565px;
 }
 .opinions__list {
   display: flex;

@@ -113,7 +113,7 @@ export const en = {
   },
   opinionsInfo: {
     text: {
-      title: "What Our “Pilots Are Saying",
+      title: "What Our “Pilots“ Are Saying",
     },
     list: [
       {

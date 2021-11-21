@@ -22,8 +22,19 @@
   height: 40px;
   width: 40px;
   transition: all 0.3s;
+  text-transform: uppercase;
+  font-weight: 500;
 }
 .language-switcher__btn:hover {
   background: var(--section-bg-color-default);
   color: var(--section-text-color-alt-dark);
+}
+.language-switcher__btn--indicate {
+  border: 1px solid #fff;
+  box-sizing: border-box;
+}
+@media screen and (max-width: 767px) {
+  .language-switcher__item {
+    display: inline-block;
+  }
 }

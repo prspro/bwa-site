@@ -3,20 +3,22 @@ import "./languageswitcher.css";
 import useLanguageSwitcher from "./useLanguageSwitcher";
 import classNames from "classnames";
 
-export default function LanguageSwitcher() {
+export default function LanguageSwitcher({ additionalClass }) {
   const { handleLangSwitcherClick, handleListToggler, langList, listShown } =
     useLanguageSwitcher();
 
   return (
-    <div className="language-switcher">
+    <div className={classNames("language-switcher", additionalClass)}>
       <button
         onClick={() => handleListToggler()}
-        className="language-switcher__btn"
+        className="language-switcher__btn language-switcher__btn--indicate on-dt"
       >
         {langList.find((entry) => entry.isActive).lang}
       </button>
       <ul
-        className={classNames("language-switcher__list", { shown: listShown })}
+        className={classNames("on-dt language-switcher__list", {
+          shown: listShown,
+        })}
       >
         {langList
           .filter((entry) => {
@@ -34,6 +36,20 @@ export default function LanguageSwitcher() {
               </li>
             );
           })}
+      </ul>
+      <ul className={"on-mob language-switcher__list shown"}>
+        {langList.map((entry, idx) => {
+          return (
+            <li className="language-switcher__item" key={idx}>
+              <button
+                className="language-switcher__btn"
+                onClick={() => handleLangSwitcherClick(entry.lang)}
+              >
+                {entry.lang}
+              </button>
+            </li>
+          );
+        })}
       </ul>
     </div>
   );
