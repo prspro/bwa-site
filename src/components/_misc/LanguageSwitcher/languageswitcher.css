@@ -33,8 +33,14 @@
   border: 1px solid #fff;
   box-sizing: border-box;
 }
+.language-switcher__list--full {
+  display: none;
+}
 @media screen and (max-width: 767px) {
   .language-switcher__item {
     display: inline-block;
+  }
+  .language-switcher__list--full {
+    display: block;
   }
 }

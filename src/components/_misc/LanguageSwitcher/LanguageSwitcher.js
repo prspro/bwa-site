@@ -37,7 +37,7 @@ export default function LanguageSwitcher({ additionalClass }) {
             );
           })}
       </ul>
-      <ul className={"on-mob language-switcher__list shown"}>
+      <ul className={"language-switcher__list language-switcher__list--full"}>
         {langList.map((entry, idx) => {
           return (
             <li className="language-switcher__item" key={idx}>

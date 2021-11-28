@@ -23,23 +23,23 @@ export const data = {
     itemList: [
       {
         translatablePart: "item1",
-        link: ".",
+        link: "/",
       },
       {
         translatablePart: "item2",
-        link: ".",
+        link: "/gallery",
       },
       {
         translatablePart: "item3",
-        link: ".",
+        link: "/products",
       },
       {
         translatablePart: "item4",
-        link: ".",
+        link: "/review",
       },
       {
         translatablePart: "item5",
-        link: ".",
+        link: "/support",
       },
     ],
   },
