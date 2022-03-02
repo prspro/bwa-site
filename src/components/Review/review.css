@@ -1,0 +1,75 @@
+.review {
+}
+.review__inner-wrap {
+  display: flex;
+}
+.review__picture-col {
+  width: 725px;
+  margin-right: 50px;
+}
+.review__big-picture-wrap {
+  border: 1px solid #e5e5e5;
+  box-sizing: border-box;
+  border-radius: 15px;
+  padding: 17px 15px;
+  margin-bottom: 20px;
+}
+.review__big-picture {
+  border-radius: 15px;
+  width: 100%;
+}
+.review__thumb-picture-wrap {
+  padding: 10px;
+  border: 1px solid #e5e5e5;
+  box-sizing: border-box;
+  border-radius: 10px;
+}
+.review__thumb-picture {
+  box-sizing: border-box;
+  border-radius: 8px;
+}
+
+.review__thumb-wrap .splide .is-active .review__thumb-picture-wrap {
+  border: 1px solid #333;
+}
+
+.review__info-title {
+}
+.review__info-description {
+}
+.review__info-price {
+}
+.review__features-title {
+}
+.review__features-list {
+}
+.review__features-item {
+}
+
+.review__thumb-wrap
+  .splide--nav
+  > .splide__slider
+  > .splide__track
+  > .splide__list
+  > .splide__slide.is-active,
+.review__thumb-wrap
+  .splide--nav
+  > .splide__track
+  > .splide__list
+  > .splide__slide.is-active {
+  border: none;
+}
+
+.review__info-col
+  .splide--nav
+  > .splide__slider
+  > .splide__track
+  > .splide__list
+  > .splide__slide,
+.review__info-col
+  .splide--nav
+  > .splide__track
+  > .splide__list
+  > .splide__slide.is-active {
+  border: 3px solid transparent;
+}
