@@ -8,6 +8,7 @@ import Opinions from "./components/Opinions/Opinions";
 import Footer from "./components/Footer/Footer";
 import Overlay from "./components/_misc/Overlay/Overlay";
 import Review from "./components/Review/Review";
+import Hero from "./components/Hero/Hero";
 
 //? Router
 import { Routes, Route, BrowserRouter } from "react-router-dom";
@@ -42,6 +43,7 @@ function App() {
               path="/"
               element={
                 <React.Fragment>
+                  <Hero />
                   <Advantages />
                   <QuickInfo />
                   <Products />

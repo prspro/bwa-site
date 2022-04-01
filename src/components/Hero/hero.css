@@ -1,0 +1,24 @@
+.hero {
+  background-color: var(--section-bg-color-dark);
+}
+.hero__text-wrap {
+  margin: 0 auto 60px auto;
+  text-align: center;
+  max-width: 670px;
+}
+.hero__text-wrap h1 {
+  font-size: var(--section-text-fz-xx-lrg);
+  margin-bottom: 10px;
+  color: var(--section-text-color-alt-light);
+}
+.hero__text-wrap p {
+  margin-bottom: 10px;
+  color: var(--section-text-color-alt-default);
+}
+.hero__text-wrap > *:last-child {
+  margin-top: 16px;
+  margin-bottom: 0;
+}
+.hero__hero-picture {
+  margin: 0 auto;
+}
