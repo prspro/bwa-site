@@ -34,16 +34,45 @@
 }
 
 .review__info-title {
+  font-size: var(--section-text-fz-x-lrg);
+  color: var(--section-text-color-alt-dark);
 }
 .review__info-description {
+  font-size: var(--section-text-fz-lrg);
+  color: var(--section-text-color-alt-dark);
+  margin-bottom: 10px;
 }
 .review__info-price {
+  color: var(--section-text-color-alt-dark);
+  font-size: var(--section-text-fz-xxx-lrg);
+  font-weight: 600;
+  margin-bottom: 10px;
 }
 .review__features-title {
+  font-size: var(--section-text-fz-lrg);
+  color: var(--section-text-color-alt-dark);
+  font-weight: 500;
+  margin-bottom: 25px;
 }
 .review__features-list {
+  margin-bottom: 27px;
 }
 .review__features-item {
+  font-size: var(--section-text-fz-lrg);
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+}
+.review__features-item img {
+  margin-right: 20px;
+}
+.review__features-btn {
+  width: 280px;
+}
+
+
+.review__features-item:last-of-type {
+  margin-bottom: 0;
 }
 
 .review__thumb-wrap

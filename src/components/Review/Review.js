@@ -3,8 +3,6 @@ import Image from "../_misc/Image/Image";
 import Button from "../_misc/Button/Button";
 import useReview from "./useReview";
 
-import { useRef, useEffect } from "react";
-
 import { Splide, SplideSlide } from "@splidejs/react-splide";
 import "@splidejs/splide/dist/css/splide.min.css";
 
@@ -108,19 +106,39 @@ export default function Review() {
                   <p className="review__features-title">Drone features:</p>
                   <ul className="review__features-list">
                     <li className="review__features-item">
-                      4K Camera Resolution
+                      <Image
+                        src={"/img/svg/photo.svg"}
+                        alt={""}
+                        pictureClass=""
+                      />
+                      <p>4K Camera Resolution</p>
                     </li>
                     <li className="review__features-item">
-                      4K Camera Resolution
+                      <Image
+                        src={"/img/svg/floppy.svg"}
+                        alt={""}
+                        pictureClass=""
+                      />
+                      <p>4K Camera Resolution</p>
                     </li>
                     <li className="review__features-item">
-                      4K Camera Resolution
+                      <Image
+                        src={"/img/svg/timer.svg"}
+                        alt={""}
+                        pictureClass=""
+                      />
+                      <p>4K Camera Resolution</p>
                     </li>
                     <li className="review__features-item">
-                      4K Camera Resolution
+                    <Image
+                        src={"/img/svg/battery.svg"}
+                        alt={""}
+                        pictureClass=""
+                      />
+                      <p>4K Camera Resolution</p>
                     </li>
                   </ul>
-                  <Button />
+                  <Button slug="." buttonClass="btn--blue review__features-btn" />
                 </SplideSlide>
                 <SplideSlide>
                   <h2 className="review__info-title">Drone Light</h2>
@@ -143,7 +161,7 @@ export default function Review() {
                       4K Camera Resolution
                     </li>
                   </ul>
-                  <Button />
+                  <Button slug="." buttonClass="btn--blue" />
                 </SplideSlide>
                 <SplideSlide>
                   <h2 className="review__info-title">Drone Light</h2>
@@ -166,7 +184,7 @@ export default function Review() {
                       4K Camera Resolution
                     </li>
                   </ul>
-                  <Button />
+                  <Button slug="." buttonClass="btn--blue" />
                 </SplideSlide>
                 <SplideSlide>
                   <h2 className="review__info-title">Drone Light</h2>
@@ -189,7 +207,7 @@ export default function Review() {
                       4K Camera Resolution
                     </li>
                   </ul>
-                  <Button />
+                  <Button slug="." buttonClass="btn--blue" />
                 </SplideSlide>
               </Splide>
             </div>
